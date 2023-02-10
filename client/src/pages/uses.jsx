@@ -29,7 +29,7 @@ export default function Uses() {
   return (
     <>
       <Head>
-        <title>Uses - Spencer Sharp</title>
+        <title>Uses - Sajjad Anwar</title>
         <meta
           name="description"
           content="Software I use, gadgets I love, and other things I recommend."
@@ -68,10 +68,8 @@ export default function Uses() {
             </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
+            <Tool title="JetBrains">
+              Weather Its Web Development, Go Development, Data Science thing or C/C++ I use JetBrains tools.
             </Tool>
             <Tool title="iTerm2">
               I’m honestly not even sure what features I get with this that
