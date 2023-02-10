@@ -66,12 +66,14 @@ export default function About() {
                         </h1>
                         <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                             <p>
-                                My name is Sajjad Anwar, and I am a highly motivated and passionate software developer with [Number of Years] years of experience in the field. I have a strong background in GoLang,JavaScript,Python,TypeScript,PHP,
-                                Rust and have worked on a wide range of projects, from small scale website development to large-scale enterprise applications.
+                                My name is Sajjad Anwar, and I am a highly motivated and passionate software developer with 5+ years of experience in the field.
 
-                                Throughout my career, I have consistently demonstrated my ability to learn new technologies quickly, work well under pressure, and consistently deliver high-quality results. I have strong analytical and problem-solving skills and am committed to producing efficient and maintainable code.
+                             I have a strong background in <strong className="bg-blend-soft-light">GoLang,JavaScript,Python,TypeScript,PHP, Rust, Linux (fan of Linux) </strong> and have worked on a wide range of projects, from small scale website development to large-scale enterprise applications.</p>
 
-                                One of my key strengths is my ability to effectively communicate with both technical and non-technical stakeholders. I have experience working in a team environment and have consistently received positive feedback for my collaboration skills and ability to lead projects.
+                                <p>Throughout my career, I have consistently demonstrated my ability to learn new technologies quickly, work well under pressure, and consistently deliver high-quality results.
+                                    I have strong analytical and problem-solving skills and am committed to producing efficient and maintainable code.</p>
+
+                                <p>One of my key strengths is my ability to effectively communicate with both technical and non-technical stakeholders. I have experience working in a team environment and have consistently received positive feedback for my collaboration skills and ability to lead projects.
                             </p>
                         </div>
                     </div>
