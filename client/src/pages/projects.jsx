@@ -3,10 +3,10 @@ import Head from 'next/head'
 
 import {Card} from '@/components/Card'
 import {SimpleLayout} from '@/components/SimpleLayout'
-import workreel from '@/images/logos/workreel.svg'
-import siguto from '@/images/logos/siguto.svg'
-import snareobics from '@/images/logos/snareobics.svg'
-import seaborn from '@/images/logos/seaborn.svg'
+import workreel from '../.././public/static/workreel.svg'
+import siguto from '../.././public/static/siguto.svg'
+import snareobics from '../.././public/static/snareobics.svg'
+import seaborn from '../.././public/static/seaborn.svg'
 
 const projects = [
     {
@@ -34,7 +34,10 @@ const projects = [
         name: 'Data Visualizations',
         description:
             'Data Visualizations with various Python libraries using Jupyter Notebooks.',
-        link: {href: 'https://github.com/sajjadanwar0/visual-python', label: 'https://github.com/sajjadanwar0/visual-python'},
+        link: {
+            href: 'https://github.com/sajjadanwar0/visual-python',
+            label: 'https://github.com/sajjadanwar0/visual-python'
+        },
         logo: seaborn,
     },
 
