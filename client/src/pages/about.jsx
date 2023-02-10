@@ -82,13 +82,13 @@ export default function About() {
                             <SocialLink href="https://twitter.com/Sajjad_Anwar0" icon={TwitterIcon}>
                                 Follow on Twitter
                             </SocialLink>
-                            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+                            <SocialLink href="https://www.instagram.com/sajjadanwar0" icon={InstagramIcon} className="mt-4">
                                 Follow on Instagram
                             </SocialLink>
-                            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+                            <SocialLink href="https://github.com/sajjadanwar0" icon={GitHubIcon} className="mt-4">
                                 Follow on GitHub
                             </SocialLink>
-                            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+                            <SocialLink href="https://www.linkedin.com/in/sajjad-anwar-a62267194" icon={LinkedInIcon} className="mt-4">
                                 Follow on LinkedIn
                             </SocialLink>
                             <SocialLink
