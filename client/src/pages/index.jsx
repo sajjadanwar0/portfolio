@@ -259,7 +259,7 @@ export default function Home({articles}) {
                 </title>
                 <meta
                     name="description"
-                    content="I’m Sajjad, a software designer and entrepreneur based in London City. I’m currently a datascience student in my last semester, doing research and learning Rust nowadays."
+                    content="I’m Sajjad, a FullStack Engineer and data scientist based in London City. I’m currently a datascience student in my last semester, doing research and learning Rust nowadays."
                 />
             </Head>
             <Container className="mt-9">
@@ -268,9 +268,8 @@ export default function Home({articles}) {
                         FullStack Engineer, DataScientist.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I’m Sajjad, a FullStack engineer and DataScientist based in London
-                        City. Currently I am doing Master of Data Science, doing research. I am a fullstack engineer
-                        having 5+ years of professional experience.
+                        I’m Sajjad, a FullStack Engineer and data scientist based in London City. I’m currently a datascience student in my last semester, doing research and learning Rust nowadays.
+                        I have 5+ years of professional experience as software engineer.
                     </p>
                     <div className="mt-6 flex gap-6">
                         <SocialLink
