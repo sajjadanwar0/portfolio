@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 'use client';
 
-import {useRouter} from 'next/navigation';
 import {usePathname} from 'next/navigation';
 
 import {Popover, Transition} from '@headlessui/react'
