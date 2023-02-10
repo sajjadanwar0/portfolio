@@ -9,7 +9,7 @@ import GuestLayout from '@/components/Layouts/GuestLayout'
 import ApplicationLogo from '@/components/ApplicationLogo'
 import AuthSessionStatus from '@/components/AuthSessionStatus'
 import AuthValidationErrors from '@/components/AuthValidationErrors'
-import {useRouter} from "next/router";
+import {useRouter} from 'next/navigation';
 
 const Login = () => {
     const router = useRouter()

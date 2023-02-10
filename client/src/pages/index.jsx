@@ -18,11 +18,9 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import xtendum from '@/images/logos/xtendum.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
 import mindgigs from '@/images/logos/mindgigs.svg'
 import aartec from '@/images/logos/aartec.svg'
 import pcfuture from '@/images/logos/pc-future.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
 import {formatDate} from '@/lib/formatDate'
@@ -89,13 +87,13 @@ function ArrowDownIcon(props) {
 function Article({article}) {
     return (
         <Card as="article">
-            <Card.Title href={`/articles/${article.slug}`}>
-                {article.title}
+            <Card.Title href={`/articles/${article?.slug}`}>
+                {article?.title}
             </Card.Title>
             <Card.Eyebrow as="time" dateTime={article.date} decorate>
-                {formatDate(article.date)}
+                {formatDate(article?.date)}
             </Card.Eyebrow>
-            <Card.Description>{article.description}</Card.Description>
+            <Card.Description>{article?.description}</Card.Description>
             <Card.Cta>Read article</Card.Cta>
         </Card>
     )

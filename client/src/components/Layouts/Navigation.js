@@ -1,7 +1,9 @@
+'use client';
+
 import Link from 'next/link'
 import { useState } from 'react'
 import { useAuth } from '@/hooks/auth'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import NavLink from '@/components/NavLink'
 import Dropdown from '@/components/Dropdown'
 import ApplicationLogo from '@/components/ApplicationLogo'

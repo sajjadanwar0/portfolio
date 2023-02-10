@@ -1,11 +1,12 @@
 import useSWR from 'swr'
 import axios from '@/lib/axios'
 import {useEffect} from 'react'
-import {useRouter} from 'next/router'
+'use client';
+import { useRouter } from 'next/navigation';
 import _, {difference} from 'lodash'
 
 export const useAuth = ({middleware, redirectIfAuthenticated = '/dashboard'} = {}) => {
-    const router = useRouter()
+    const {router} = useRouter()
 
     const {data: user, error} = useSWR('/api/user', () =>
         axios

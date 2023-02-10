@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { useAuth } from '@/hooks/auth'
-import Button from '@/components/Button'
+import Button from '@/components/Button/Button'
 import AuthCard from '@/components/AuthCard'
 import GuestLayout from '@/components/Layouts/GuestLayout'
 import ApplicationLogo from '@/components/ApplicationLogo'

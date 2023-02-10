@@ -5,6 +5,7 @@ import {Header} from '@/components/Header'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
+import {usePathname} from "next/navigation";
 
 function usePrevious(value) {
     let ref = useRef()
@@ -15,8 +16,10 @@ function usePrevious(value) {
     return ref.current
 }
 
-export default function App({Component, pageProps, router}) {
-    let previousPathname = usePrevious(router.pathname)
+export default function App({Component, pageProps}) {
+    const pathname = usePathname();
+
+    let previousPathname = usePrevious(pathname)
 
     return (
         <>
@@ -26,7 +29,7 @@ export default function App({Component, pageProps, router}) {
                 </div>
             </div>
             <div className="relative">
-                {router.pathname === '/dashboard' ? null : <Header/>}
+                {pathname === '/dashboard' ? null : <Header/>}
                 <main>
                     <Component previousPathname={previousPathname} {...pageProps} />
                 </main>
