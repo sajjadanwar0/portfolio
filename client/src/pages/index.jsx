@@ -24,6 +24,7 @@ import pcfuture from '@/images/logos/pc-future.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
 import {formatDate} from '@/lib/formatDate'
+import axios from "axios";
 
 function MailIcon(props) {
     return (
@@ -138,6 +139,40 @@ function Newsletter() {
 }
 
 function Resume() {
+
+
+    const downloadPdf =  async () => {
+        try {
+            await axios
+                .get("cv.pdf", {
+                    responseType: "blob",
+                })
+                .then((response) => {
+                    let link = document.createElement("a");
+                    link.setAttribute("target","_blank");
+
+                    const file = new Blob([response.data], {type: "application/pdf"});
+                    link.setAttribute("href", URL.createObjectURL(file));
+                    link.setAttribute("download","SajjadCV.pdf");
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
+                    // const fileURL = URL.createObjectURL(file);
+
+                    // const pdfWindow = window.open();
+                    // pdfWindow.location.href = fileURL;
+
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        } catch (error) {
+            return {error};
+        }
+
+    }
+
     let resume = [
         {
             company: 'PCFutures',
@@ -214,10 +249,11 @@ function Resume() {
                     </li>
                 ))}
             </ol>
-            <Button href="#" variant="secondary" className="group mt-6 w-full">
+            <Button onClick={() => downloadPdf()} variant="secondary" className="group mt-6 w-full">
                 Download CV
                 <ArrowDownIcon
                     className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"/>
+
             </Button>
         </div>
     )
@@ -268,7 +304,8 @@ export default function Home({articles}) {
                         FullStack Engineer, DataScientist.
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I’m Sajjad, a FullStack Engineer and data scientist based in London City. I’m currently a datascience student in my last semester, doing research and learning Rust nowadays.
+                        I’m Sajjad, a FullStack Engineer and data scientist based in London City. I’m currently a
+                        datascience student in my last semester, doing research and learning Rust nowadays.
                         I have 5+ years of professional experience as software engineer.
                     </p>
                     <div className="mt-6 flex gap-6">
