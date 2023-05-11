@@ -41,7 +41,7 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>About - Sajjad Anwar</title>
+                <title>About - Sajjad Khan</title>
                 <meta
                     name="description"
                     content="I’m Spencer Sharp. I live in New York City, where I design the future."
@@ -82,22 +82,22 @@ export default function About() {
                             <SocialLink href="https://twitter.com/Sajjad_Anwar0" icon={TwitterIcon}>
                                 Follow on Twitter
                             </SocialLink>
-                            <SocialLink href="https://www.instagram.com/sajjadanwar0" icon={InstagramIcon} className="mt-4">
-                                Follow on Instagram
-                            </SocialLink>
+                            {/*<SocialLink href="https://www.instagram.com/sajjadanwar0" icon={InstagramIcon} className="mt-4">*/}
+                            {/*    Follow on Instagram*/}
+                            {/*</SocialLink>*/}
                             <SocialLink href="https://github.com/sajjadanwar0" icon={GitHubIcon} className="mt-4">
                                 Follow on GitHub
                             </SocialLink>
-                            <SocialLink href="https://www.linkedin.com/in/sajjad-anwar-a62267194" icon={LinkedInIcon} className="mt-4">
-                                Follow on LinkedIn
-                            </SocialLink>
-                            <SocialLink
-                                href="mailto:sajjadanwar400@gmail.com"
-                                icon={MailIcon}
-                                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-                            >
-                                sajjadanwar400@gmail.com
-                            </SocialLink>
+                            {/*<SocialLink href="https://www.linkedin.com/in/sajjad-anwar-a62267194" icon={LinkedInIcon} className="mt-4">*/}
+                            {/*    Follow on LinkedIn*/}
+                            {/*</SocialLink>*/}
+                            {/*<SocialLink*/}
+                            {/*    href="mailto:sajjadanwar400@gmail.com"*/}
+                            {/*    icon={MailIcon}*/}
+                            {/*    className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"*/}
+                            {/*>*/}
+                            {/*    sajjadanwar400@gmail.com*/}
+                            {/*</SocialLink>*/}
                         </ul>
                     </div>
                 </div>
