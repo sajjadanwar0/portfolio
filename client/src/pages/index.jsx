@@ -191,20 +191,20 @@ function Resume() {
             start: '2020',
             end: '2022',
         },
-        // {
-        //     company: 'Xtendum Services',
-        //     title: 'FullStack Engineer',
-        //     logo: xtendum,
-        //     start: '2018',
-        //     end: '2019',
-        // },
-        // {
-        //     company: 'MindGigs',
-        //     title: 'Web Developer',
-        //     logo: mindgigs,
-        //     start: '2016',
-        //     end: '2018',
-        // },
+        {
+            company: 'Xtendum Services',
+            title: 'FullStack Engineer',
+            logo: xtendum,
+            start: '2018',
+            end: '2019',
+        },
+        {
+            company: 'MindGigs',
+            title: 'Web Developer',
+            logo: mindgigs,
+            start: '2016',
+            end: '2018',
+        },
     ]
 
     return (
@@ -314,22 +314,22 @@ export default function Home({articles}) {
                             aria-label="Follow on Twitter"
                             icon={TwitterIcon}
                         />
-                        {/*<SocialLink*/}
-                        {/*    href="https://instagram.com/sajjadanwar0"*/}
-                        {/*    aria-label="Follow on Instagram"*/}
-                        {/*    icon={InstagramIcon}*/}
-                        {/*/>*/}
+                        <SocialLink
+                            href="https://instagram.com/sajjadanwar0"
+                            aria-label="Follow on Instagram"
+                            icon={InstagramIcon}
+                        />
                         <SocialLink
                             href="https://github.com/sajjadanwar0"
                             aria-label="Follow on GitHub"
                             icon={GitHubIcon}
                         />
-                        {/*<SocialLink*/}
-                        {/*    href="https://www.linkedin.com/in/sajjad-anwar-a62267194/"*/}
-                        {/*    aria-label="Follow on LinkedIn"*/}
-                        {/*    icon={LinkedInIcon}*/}
+                        <SocialLink
+                            href="https://www.linkedin.com/in/sajjad-anwar-a62267194/"
+                            aria-label="Follow on LinkedIn"
+                            icon={LinkedInIcon}
 
-                        {/*/>*/}
+                        />
                     </div>
                 </div>
             </Container>

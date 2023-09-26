@@ -119,6 +119,9 @@
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/league/flysystem-local" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/symfony/polyfill-php83" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
